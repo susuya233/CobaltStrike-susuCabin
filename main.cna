@@ -1,0 +1,45 @@
+println("\c9 [+] Wellcome To Susu's Cabin , by Susu is Great   :) [+]")
+
+#---------------------------------------------------#
+#    ▄██████▄   ▄█          ▄████████ 
+#   ███    ███ ███         ███    ███ 
+#   ███    ███ ███         ███    ███ 
+#   ███    ███ ███         ███    ███ 
+#   ███    ███ ███       ▀███████████ 
+#   ███    ███ ███         ███    ███ 
+#   ███    ███ ███▌    ▄   ███    ███ 
+#    ▀██████▀  █████▄▄██   ███    █▀  
+#              ▀                     				
+#---------------------------------------------------#
+
+
+command wellcome {
+	println("\c9 [+] Wellcome To Susu's Cabin , by Susu is Great :) [+]");
+
+} #在命令行中显示
+
+
+
+popup beacon_bottom {
+    menu "苏苏的小屋"{
+
+    	menu "♥ 欢迎来到苏苏的小屋 :)" {}
+
+    	# Plugin Loader
+        include(script_resource("modules/Scanning/Scanning.cna"));
+        include(script_resource("modules/screens/screens.cna"));
+        include(script_resource("modules/directory/directory.cna"));
+    }
+}
+
+
+popup Susu_Cabin{
+  item("github地址",{url_open("https://github.com/susuya233")});
+  separator();
+   separator();
+  menu "♥ 免杀工具"{
+  item("&Fscan免杀",{url_open("https://github.com/susuya233/fscanpppro")});
+  }
+}
+
+menubar("Susu_Cabin", "Susu_Cabin");

@@ -1,0 +1,298 @@
+ * * * * * * * * * * * * * * * * * *
+   info 2024-05-31 01:30:52.882      front   5268  20684                                  main - * AnyDesk Windows Startup *
+   info 2024-05-31 01:30:52.882      front   5268  20684                                  main - * Version 8.0.10 (release/win_8.0.10 8941b379f03505960bfba86d51b033e4f12eac4a)
+   info 2024-05-31 01:30:52.882      front   5268  20684                                  main - * Checksum 88978f95220cea3e5cd714ad3d984e5d
+   info 2024-05-31 01:30:52.882      front   5268  20684                                  main - * Build 20240424145318
+   info 2024-05-31 01:30:52.882      front   5268  20684                                  main - * Copyright (C) 2024 AnyDesk Software GmbH *
+   info 2024-05-31 01:30:52.883      front   5268  20684                                  main - 
+   info 2024-05-31 01:30:52.883      front   5268  20684                                  main - Command Line params: "C:\Users\susu\Downloads\AnyDesk.exe" 
+   info 2024-05-31 01:30:52.883      front   5268  20684                                  main - Process started at 2024-05-31. PID 5268. OS is Windows 10 (64 bit)
+   info 2024-05-31 01:30:52.883      front   5268  20684                         impl_selector - using sse2 (intrinsics)
+   info 2024-05-31 01:30:52.883      front   5268  20684                                  main - Install status: not installed (<4)
+   info 2024-05-31 01:30:52.888      front   5268  20684          base.data.config_application - Adding GPO defaults layer.
+   info 2024-05-31 01:30:52.889      front   5268  20684          base.data.config_application - Adding GPO overrides layer.
+   info 2024-05-31 01:30:52.914      front   5268  20684                           gui.gui_app - DPI scaling: 1.00 / 1.00
+   info 2024-05-31 01:30:52.914      front   5268  20684                           gui.gui_app - Using std-resolution bitmaps.
+warning 2024-05-31 01:30:52.926      front   5268  20684                          account_info - Could not read account info from config.
+warning 2024-05-31 01:30:52.926      front   5268  20684                          account_info - 	1 times: Could not read account info from config.
+   info 2024-05-31 01:30:52.926      front   5268  20684                       base.signal.hub - 16 threads.
+   info 2024-05-31 01:30:52.944      front   5268  20684                            app.roster - Updating the jump list
+   info 2024-05-31 01:30:52.945      front   5268  20684                  os_win.jump_list_mgr - 0 items found
+   info 2024-05-31 01:30:52.976      front   5268  20684                          wgf.msg_loop - Waiting for events.
+   info 2024-05-31 01:30:52.976      front   5268  16952                      win_app.frontend - Frontend startup (elevated).
+   info 2024-05-31 01:30:52.977      front   5268  16952                   fiber.ipc_namespace - Global: no
+   info 2024-05-31 01:30:52.977      front   5268  16952                      win_app.frontend - Logging the frontend in.
+   info 2024-05-31 01:30:52.978      front   5268  16952             app.named_process_starter - Spawning local service.
+   info 2024-05-31 01:30:52.978      front   5268  16952          os_win.is_linked_token_admin - Couldn't get the linked token (1312).
+warning 2024-05-31 01:30:52.981      front   5268  16952             app.named_process_starter - Starting control process in session 1.
+warning 2024-05-31 01:30:53.004      front   5268  16952             app.named_process_starter - Could not query the user token (1314).
+   info 2024-05-31 01:30:53.004      front   5268  16952             app.named_process_starter - Spawning process directly in current session 1.
+warning 2024-05-31 01:30:53.040      front   5268  20684                          account_info - Could not read account info from config.
+warning 2024-05-31 01:30:53.070      front   5268  20684                          account_info - 	3 times: Could not read account info from config.
+   info 2024-05-31 01:30:53.070      front   5268  20684                        gui.mainwindow - Main window created (standard mode).
+ * * * * * * * * * * * * * * * * * *
+   info 2024-05-31 01:30:53.391       lsvc  79928  32580                                  main - * AnyDesk Windows Startup *
+   info 2024-05-31 01:30:53.391       lsvc  79928  32580                                  main - * Version 8.0.10 (release/win_8.0.10 8941b379f03505960bfba86d51b033e4f12eac4a)
+   info 2024-05-31 01:30:53.391       lsvc  79928  32580                                  main - 
+   info 2024-05-31 01:30:53.391       lsvc  79928  32580                                  main - Command Line params: "C:\Users\susu\Downloads\AnyDesk.exe" --local-service
+   info 2024-05-31 01:30:53.391       lsvc  79928  32580                                  main - Process started at 2024-05-31. PID 79928. OS is Windows 10 (64 bit)
+   info 2024-05-31 01:30:53.391       lsvc  79928  32580                         impl_selector - using sse2 (intrinsics)
+   info 2024-05-31 01:30:53.392       lsvc  79928  32580          base.data.config_application - Adding GPO defaults layer.
+   info 2024-05-31 01:30:53.392       lsvc  79928  32580          base.data.config_application - Adding GPO overrides layer.
+   info 2024-05-31 01:30:53.393       lsvc  79928  32580            permission_profile_manager - Migrating V0 -> V1
+   info 2024-05-31 01:30:53.403       lsvc  79928  32580                          wgf.msg_loop - Waiting for events.
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136                                  lsvc - Starting the scheduler.
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136                       fiber.scheduler - Spawning root fiber 1 'regcfg_watcher'.
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136                       fiber.scheduler - Spawning root fiber 2.
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136                       fiber.scheduler - Scheduler started.
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136    1                   regcfg_watcher - Start watching registry config.
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136    2                      app.service - Opening the IPC namespace.
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136    2              fiber.ipc_namespace - Global: no
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136    2                      app.service - Logging into the IPC namespace.
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136    2                  fiber.scheduler - Spawning child fiber 3 (parent: 2).
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136    2                  fiber.scheduler - Spawning child fiber 4 'notifications' (parent: 2).
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136    2                  fiber.scheduler - Spawning child fiber 5 (parent: 2).
+   info 2024-05-31 01:30:53.403       lsvc  79928  54136    2                  fiber.scheduler - Spawning child fiber 6 'license_adapter' (parent: 2).
+   info 2024-05-31 01:30:53.404       lsvc  79928  54136    2                      app.service - Starting to supervise the IPC namespace.
+   info 2024-05-31 01:30:53.404       lsvc  79928  54136    2                      app.service - Starting the connector.
+   info 2024-05-31 01:30:53.404       lsvc  79928  54136    2            anynet.connection_mgr - Generating a new certificate and key.
+   info 2024-05-31 01:30:53.412       lsvc  79928   5416                    os_win.firewall_if - Adding AnyDesk to the firewall rules.
+ * * * * * * * * * * * * * * * * * *
+   info 2024-05-31 01:30:53.413      lctrl  72396  58672                                  main - * AnyDesk Windows Startup *
+   info 2024-05-31 01:30:53.413      lctrl  72396  58672                                  main - * Version 8.0.10 (release/win_8.0.10 8941b379f03505960bfba86d51b033e4f12eac4a)
+   info 2024-05-31 01:30:53.413      lctrl  72396  58672                                  main - 
+   info 2024-05-31 01:30:53.413      lctrl  72396  58672                                  main - Command Line params: "C:\Users\susu\Downloads\AnyDesk.exe" --local-control
+   info 2024-05-31 01:30:53.413      lctrl  72396  58672                                  main - Process started at 2024-05-31. PID 72396. OS is Windows 10 (64 bit)
+   info 2024-05-31 01:30:53.413      lctrl  72396  58672                         impl_selector - using sse2 (intrinsics)
+   info 2024-05-31 01:30:53.419      lctrl  72396  58672          base.data.config_application - Adding GPO defaults layer.
+   info 2024-05-31 01:30:53.419      lctrl  72396  58672          base.data.config_application - Adding GPO overrides layer.
+   info 2024-05-31 01:30:53.439      lctrl  72396  58672                           gui.gui_app - DPI scaling: 1.00 / 1.00
+   info 2024-05-31 01:30:53.439      lctrl  72396  58672                           gui.gui_app - Using std-resolution bitmaps.
+   info 2024-05-31 01:30:53.453      lctrl  72396  58672                       base.signal.hub - 1 threads.
+   info 2024-05-31 01:30:53.453      lctrl  72396  58672                       clipbrd.capture - Empty format set.
+   info 2024-05-31 01:30:53.453      lctrl  72396  58672                    app.tunnel_ft_comp - Ready.
+   info 2024-05-31 01:30:53.458      lctrl  72396  24588                        ad_app.control - Starting scheduler thread.
+   info 2024-05-31 01:30:53.458      lctrl  72396  24588                       fiber.scheduler - Scheduler started.
+   info 2024-05-31 01:30:53.458      lctrl  72396  58672                          wgf.msg_loop - Waiting for events.
+   info 2024-05-31 01:30:53.458      lctrl  72396   3996                        ad_app.control - Control startup.
+   info 2024-05-31 01:30:53.458      lctrl  72396   3996                        ad_app.control - Connecting to the service.
+   info 2024-05-31 01:30:53.460      lctrl  72396   3996                        ad_app.control - Starting the printer_worker.
+   info 2024-05-31 01:30:53.473      lctrl  72396   3996                        ad_app.control - Starting reg config watcher.
+   info 2024-05-31 01:30:53.473      lctrl  72396   3996                       fiber.scheduler - Spawning root fiber 1 'regcfg_watcher'.
+   info 2024-05-31 01:30:53.473      lctrl  72396  24588    1                   regcfg_watcher - Start watching registry config.
+   info 2024-05-31 01:30:53.473      lctrl  72396  52476                    app.printer_worker - Waiting for commands.
+   info 2024-05-31 01:30:53.589       lsvc  79928   5416                  win_app.firewall_mgr - Success.
+   info 2024-05-31 01:30:53.959       lsvc  79928  54136    2            anynet.connection_mgr - 2 CA certificate(s) loaded.
+   info 2024-05-31 01:30:53.959       lsvc  79928  54136    2                  fiber.scheduler - Spawning root fiber 7 'connection_mgr'.
+   info 2024-05-31 01:30:53.960       lsvc  79928  54136    2                  fiber.scheduler - Spawning root fiber 8 'main_relay_conn'.
+   info 2024-05-31 01:30:53.960       lsvc  79928  54136    2                      app.service - Setting up the listen sockets.
+   info 2024-05-31 01:30:53.960       lsvc  79928  54136    2                  fiber.scheduler - Spawning root fiber 9.
+   info 2024-05-31 01:30:53.960       lsvc  79928  54136    2                      app.service - Service startup completed.
+   info 2024-05-31 01:30:53.960       lsvc  79928  54136    2            app.discovery_manager - Updated Discovery settings: repeat interval (1000), repeat limit (10), buffer interval (5000), port range (3)
+   info 2024-05-31 01:30:53.961       lsvc  79928  54136    2                   ad.wol_service - Starting WOL service.
+   info 2024-05-31 01:30:53.961       lsvc  79928  54136    2                  fiber.scheduler - Spawning child fiber 10 'wol_service' (parent: 2).
+   info 2024-05-31 01:30:53.961       lsvc  79928  54136    2                  fiber.scheduler - Spawning child fiber 11 'invitation_service' (parent: 2).
+   info 2024-05-31 01:30:53.961       lsvc  79928  54136    2                  fiber.scheduler - Spawning child fiber 12 'ancl' (parent: 2).
+   info 2024-05-31 01:30:53.961       lsvc  79928  54136    2                  fiber.scheduler - Spawning child fiber 13 'quiver_anynet_service' (parent: 2).
+   info 2024-05-31 01:30:53.961       lsvc  79928  54136    2                      app.service - Waiting for messages.
+   info 2024-05-31 01:30:53.961       lsvc  79928  54136    2                      app.service - Process start: 5268 (frontend).
+   info 2024-05-31 01:30:53.961       lsvc  79928  54136    2           anynet.relay_connector - Short timeouts enabled.
+   info 2024-05-31 01:30:53.961       lsvc  79928  54136    2                      app.service - Process start: 72396 (control:1).
+   info 2024-05-31 01:30:53.963       lsvc  79928  54136    7            anynet.connection_mgr - Starting connection manager fiber.
+   info 2024-05-31 01:30:53.963       lsvc  79928  54136    8           anynet.main_relay_conn - Starting main relay connection.
+   info 2024-05-31 01:30:53.964       lsvc  79928  54136    8                  fiber.scheduler - Spawning child fiber 14 'relay_connector' (parent: 8 'main_relay_conn').
+   info 2024-05-31 01:30:53.964       lsvc  79928  54136    9                anynet.any_socket - Listen fiber started.
+   info 2024-05-31 01:30:53.976       lsvc  79928  54136   10                      anynet.conn - Request before connect. Queueing.
+   info 2024-05-31 01:30:53.977       lsvc  79928  54136    2                      app.service - Received connectivity update (3).
+   info 2024-05-31 01:30:53.977       lsvc  79928  54136    8           anynet.main_relay_conn - Reconnecting due to connectivity change (3).
+   info 2024-05-31 01:30:53.977       lsvc  79928  54136                       fiber.scheduler - Fiber 8 'main_relay_conn' requested quit of fiber 14 'relay_connector' (parent: 8 'main_relay_conn').
+   info 2024-05-31 01:30:53.977       lsvc  79928  54136   14           anynet.relay_connector - Relay connector started.
+   info 2024-05-31 01:30:53.977       lsvc  79928  54136   14           anynet.relay_connector - Start proxy search.
+   info 2024-05-31 01:30:53.977       lsvc  79928  54136   14                      fiber.fiber - Received quit.
+   info 2024-05-31 01:30:53.977       lsvc  79928  54136                       fiber.scheduler - Fiber 14 'relay_connector' (parent: 8 'main_relay_conn') terminated.
+   info 2024-05-31 01:30:53.978       lsvc  79928  54136    8                  fiber.scheduler - Spawning child fiber 15 'relay_connector' (parent: 8 'main_relay_conn').
+   info 2024-05-31 01:30:53.979       lsvc  79928  54136   15           anynet.relay_connector - Relay connector started.
+   info 2024-05-31 01:30:53.979       lsvc  79928  54136   15           anynet.relay_connector - Start proxy search.
+   info 2024-05-31 01:30:53.979       lsvc  79928  54136   15                base.proxy_finder - Skipping search. Next search in 59984 ms.
+   info 2024-05-31 01:30:53.979       lsvc  79928  54136   15           anynet.relay_connector - Connecting to relay boot.net.anydesk.com (1/1)
+   info 2024-05-31 01:30:53.979       lsvc  79928  54136   15           anynet.relay_connector - Skipping connect method connect_proxy_443 (1/6) (no proxy found)
+   info 2024-05-31 01:30:53.979       lsvc  79928  54136   15           anynet.relay_connector - Skipping connect method connect_proxy_80 (2/6) (no proxy found)
+   info 2024-05-31 01:30:53.979       lsvc  79928  54136   15           anynet.relay_connector - Skipping connect method socks_proxy_443 (3/6) (no proxy found)
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136    2                      app.service - New IPC connection.
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136    2                  fiber.scheduler - Spawning child fiber 16 'ipc_connection' (parent: 2).
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136    2                      app.service - New IPC connection.
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136    2                  fiber.scheduler - Spawning child fiber 17 'ipc_connection' (parent: 2).
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136   16                      app.service - Creating an IPC accept socket.
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136   16                      app.service - Connected to 5268 (frontend).
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136   17                      app.service - Creating an IPC accept socket.
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136   17                      app.service - Connected to 72396 (control:1).
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136   16                      app.service - Process login detected.
+warning 2024-05-31 01:30:53.983       lsvc  79928  54136   16                      app.service - Unexpected message. packet_msg_t
+warning 2024-05-31 01:30:53.983       lsvc  79928  54136   17                      app.service - 	5 times: Unexpected message. packet_msg_t
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136   17                      app.service - Process login detected.
+   info 2024-05-31 01:30:53.983       lsvc  79928  54136   16                  fiber.scheduler - Spawning child fiber 18 'account_adapter' (parent: 16 'ipc_connection').
+warning 2024-05-31 01:30:53.984      front   5268  14740                                   sif - Dropping out of date license response.
+warning 2024-05-31 01:30:53.984       lsvc  79928  54136   17                      app.service - Unexpected message. settings_update_msg_t
+warning 2024-05-31 01:30:53.984      front   5268  16952                                   sif - 	1 times: Dropping out of date license response.
+   info 2024-05-31 01:30:53.984      front   5268  16952                      win_app.frontend - Received process login response.
+warning 2024-05-31 01:30:53.984       lsvc  79928  54136   18                      app.service - 	5 times: Unexpected message. settings_update_msg_t
+   info 2024-05-31 01:30:53.984       lsvc  79928  54136   18                  account_adapter - Preparing quiver based account service for os-session 1
+   info 2024-05-31 01:30:53.984       lsvc  79928  54136   17                      app.service - Using existing control (72396).
+   info 2024-05-31 01:30:53.984      lctrl  72396  55964                        ad_app.control - Session count: (0, 0).
+   info 2024-05-31 01:30:53.984       lsvc  79928  54136   17                  fiber.scheduler - Spawning child fiber 19 'account_adapter' (parent: 17 'ipc_connection').
+   info 2024-05-31 01:30:53.984       lsvc  79928  54136   19                  account_adapter - Preparing quiver based account service for os-session 1
+warning 2024-05-31 01:30:53.985      front   5268  16952                          account_info - Could not read account info from config.
+   info 2024-05-31 01:30:53.986      front   5268  16952                    os_win.fs_sentinel - Observing C:\Users\Public\AccountPictures\S-1-5-21-195182337-136893400-700915709-1001
+   info 2024-05-31 01:30:53.986      front   5268  16952                      win_app.frontend - Requesting Google Chrome compatibility check.
+   info 2024-05-31 01:30:53.988      front   5268  16952                      win_app.frontend - Frontend startup complete.
+   info 2024-05-31 01:30:53.989      lctrl  72396   3996                       clipbrd.capture - Setting new capture formats: text files.
+warning 2024-05-31 01:30:53.989      lctrl  72396   3996                          account_info - Could not read account info from config.
+warning 2024-05-31 01:30:53.989      lctrl  72396   3996                        ad_app.control - Dropping out of date license response.
+   info 2024-05-31 01:30:53.990       lsvc  79928  54136   19                      anynet.conn - Request before connect. Queueing.
+   info 2024-05-31 01:30:53.997      lctrl  72396   3996                     base.proxy_finder - Skipping WPAD because proxy auto-detection is disabled in Windows.
+   info 2024-05-31 01:30:53.999      lctrl  72396   3996                        ad_app.control - Control startup finished.
+   info 2024-05-31 01:30:54.019       lsvc  79928  54136   15           anynet.relay_connector - Using IPv4: 185.229.191.44
+   info 2024-05-31 01:30:54.117      front   5268  20684                      win_app.frontend - Disallowing Google Chrome offer (no permission: 0x00000000 & 0x00000001).
+   info 2024-05-31 01:30:54.265      front   5268  42696                     base.monitor_info - Monitors found: 1
+   info 2024-05-31 01:30:54.391       lsvc  79928  54136   15                  fiber.scheduler - Spawning root fiber 20.
+   info 2024-05-31 01:30:54.454      lctrl  72396  58672                           ad_app.tray - Created the icon.
+   info 2024-05-31 01:30:55.159       lsvc  79928  54136   15           anynet.relay_connector - Cipher: ECDHE-ECDSA-AES256-GCM-SHA384 TLSv1.2 Kx=ECDH Au=ECDSA Enc=AESGCM(256) Mac=AEAD
+   info 2024-05-31 01:30:55.159       lsvc  79928  54136   15                  fiber.scheduler - Spawning root fiber 21.
+   info 2024-05-31 01:30:55.160       lsvc  79928  54136   15                        handshake - Using protocol version 3.
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136                       fiber.scheduler - Fiber 15 'relay_connector' (parent: 8 'main_relay_conn') requested quit of fiber 21.
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136   21                      fiber.fiber - Received quit.
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136                       fiber.scheduler - Fiber 21 terminated.
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136                       fiber.scheduler - Fiber 15 'relay_connector' (parent: 8 'main_relay_conn') requested quit of fiber 20.
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136   20                      fiber.fiber - Received quit.
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136                       fiber.scheduler - Fiber 20 terminated.
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136   15           anynet.relay_connector - Connection terminated: anynet_invalid_zone
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136   15           anynet.relay_connector - Received a new server list (5 servers)
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136   15           anynet.relay_connector - Connecting to relay relay-6e9f8523.net.anydesk.com (1/5)
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136   15           anynet.relay_connector - Skipping connect method connect_proxy_443 (1/6) (no proxy found)
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136   15           anynet.relay_connector - Skipping connect method connect_proxy_80 (2/6) (no proxy found)
+   info 2024-05-31 01:30:55.593       lsvc  79928  54136   15           anynet.relay_connector - Skipping connect method socks_proxy_443 (3/6) (no proxy found)
+   info 2024-05-31 01:30:55.622       lsvc  79928  54136   15           anynet.relay_connector - Using IPv4: 5.189.200.43
+   info 2024-05-31 01:30:55.894       lsvc  79928  54136   15                  fiber.scheduler - Spawning root fiber 22.
+   info 2024-05-31 01:30:56.425       lsvc  79928  54136   15           anynet.relay_connector - Cipher: ECDHE-ECDSA-AES256-GCM-SHA384 TLSv1.2 Kx=ECDH Au=ECDSA Enc=AESGCM(256) Mac=AEAD
+   info 2024-05-31 01:30:56.425       lsvc  79928  54136   15                  fiber.scheduler - Spawning root fiber 23.
+   info 2024-05-31 01:30:56.427       lsvc  79928  54136   15                        handshake - Using protocol version 3.
+   info 2024-05-31 01:30:56.972       lsvc  79928  54136   15           anynet.relay_connector - Connection established.
+   info 2024-05-31 01:30:56.972       lsvc  79928  54136   15           anynet.relay_connector - Relay connector stopped.
+   info 2024-05-31 01:30:56.973       lsvc  79928  54136                       fiber.scheduler - Fiber 15 'relay_connector' (parent: 8 'main_relay_conn') terminated.
+   info 2024-05-31 01:30:56.975       lsvc  79928  54136    8           anynet.main_relay_conn - Network ID: main
+   info 2024-05-31 01:30:56.977       lsvc  79928  54136    8                anynet.relay_conn - External address: 117.129.64.225:53947.
+   info 2024-05-31 01:30:56.977       lsvc  79928  54136    8           anynet.main_relay_conn - Reporting system information.
+   info 2024-05-31 01:30:56.977       lsvc  79928  54136    8           anynet.main_relay_conn - Main relay ID: 6e9f8523
+   info 2024-05-31 01:30:57.054       lsvc  79928  54136    8           anynet.main_relay_conn - Detected 5 new networks.
+   info 2024-05-31 01:30:57.055       lsvc  79928  54136    2                   monitoring_svc - Connected: 1
+   info 2024-05-31 01:30:57.055       lsvc  79928  54136    7            anynet.connection_mgr - Main relay connection established.
+   info 2024-05-31 01:30:57.055       lsvc  79928  54136    7            anynet.connection_mgr - New user data. Client-ID: 1244350932.
+   info 2024-05-31 01:30:57.055       lsvc  79928  54136   13                   anynet_service - Relay connection state changed: Connected.
+   info 2024-05-31 01:30:57.058      front   5268  70776                   anymessage.provider - CID changed. Requesting messages update.
+   info 2024-05-31 01:30:57.583       lsvc  79928  54136    2                             ancl - Skipping ANCL update. No public key configured.
+   info 2024-05-31 01:30:57.900       lsvc  79928  54136   19                      app.service - Account: 1; 
+   info 2024-05-31 01:30:57.900       lsvc  79928  54136    2                      app.service - Account backend service status changed (0->1)
+   info 2024-05-31 01:30:58.118       lsvc  79928  54136    2                      app.service - License backend service status changed (0->1)
+   info 2024-05-31 01:30:58.118      lctrl  72396  55964                        ad_app.control - Received new license info. (free-1, 29).
+   info 2024-05-31 01:30:58.119      front   5268  63984                   anymessage.provider - License changed. Requesting messages update.
+   info 2024-05-31 01:31:43.366      front   5268  20684                     one_time_password - Resetting 2FA key.
+   info 2024-05-31 01:31:43.660      front   5268  20684          winapp.gui.permissions_panel - Selecting Profile: _unattended_access, hasPw: N
+   info 2024-05-31 01:32:02.085      front   5268  20684                     base.monitor_info - Monitors found: 1
+   info 2024-05-31 01:32:04.574      front   5268  20684          winapp.gui.permissions_panel - Selecting Profile: _unattended_access, hasPw: Y
+   info 2024-05-31 01:32:11.015      front   5268  20684                      win_app.frontend - Disallowing Google Chrome offer (no permission: 0x00000000 & 0x00000001).
+   info 2024-05-31 01:32:22.406      front   5268  20684                          wgf.msg_loop - Received quit message.
+   info 2024-05-31 01:32:22.406      front   5268  16952                      win_app.frontend - Frontend is shutting down.
+   info 2024-05-31 01:32:22.407      front   5268  16952                    os_win.fs_sentinel - Stopped to watch C:\Users\Public\AccountPictures\S-1-5-21-195182337-136893400-700915709-1001
+   info 2024-05-31 01:32:22.409       lsvc  79928  54136   16                      app.service - IPC socket closed.
+   info 2024-05-31 01:32:22.409       lsvc  79928  54136                       fiber.scheduler - Fiber 16 'ipc_connection' (parent: 2) requested quit of fiber 18 'account_adapter' (parent: 16 'ipc_connection').
+   info 2024-05-31 01:32:22.409      front   5268  16952                      win_app.frontend - Frontend shutdown.
+   info 2024-05-31 01:32:22.409       lsvc  79928  54136   18                      fiber.fiber - Received quit.
+   info 2024-05-31 01:32:22.409       lsvc  79928  54136                       fiber.scheduler - Fiber 18 'account_adapter' (parent: 16 'ipc_connection') terminated.
+   info 2024-05-31 01:32:22.409       lsvc  79928  54136   16                      app.service - Fiber exit (ipc).
+   info 2024-05-31 01:32:22.409       lsvc  79928  54136                       fiber.scheduler - Fiber 16 'ipc_connection' (parent: 2) terminated.
+   info 2024-05-31 01:32:22.409       lsvc  79928  54136    2                      app.service - Process stop: 5268.
+   info 2024-05-31 01:32:22.409       lsvc  79928  54136    2           anynet.relay_connector - Short timeouts disabled.
+   info 2024-05-31 01:32:22.410      front   5268  16952                            app.roster - Updating the jump list
+   info 2024-05-31 01:32:22.412      front   5268  16952                  os_win.jump_list_mgr - 0 items found
+   info 2024-05-31 01:32:22.418      front   5268  16952                            app.roster - Updating the jump list
+   info 2024-05-31 01:32:22.419      front   5268  16952                  os_win.jump_list_mgr - 0 items found
+   info 2024-05-31 01:32:22.423      front   5268  16952                      win_app.frontend - Frontend terminated.
+   info 2024-05-31 01:32:22.423      front   5268  20684                      win_app.frontend - Terminating.
+   info 2024-05-31 01:32:22.444      front   5268  20684              base.prot.job_dispatcher - 0 undelivered packets.
+   info 2024-05-31 01:32:22.446      front   5268  20684                                  main - Terminated (0).
+   info 2024-05-31 01:32:27.663      lctrl  72396  58672                           ad_app.tray - The user has requested a service quit.
+   info 2024-05-31 01:32:27.663      lctrl  72396  58672                          wgf.msg_loop - Received quit message.
+   info 2024-05-31 01:32:27.663       lsvc  79928  54136   17                      app.service - Terminating the service.
+   info 2024-05-31 01:32:27.663       lsvc  79928  54136   17                  fiber.scheduler - Quitting scheduler (0).
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136                       fiber.scheduler - Quitting all fibers.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136                       fiber.scheduler - Fiber 1 'regcfg_watcher' terminated.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136                       fiber.scheduler - Fiber 2 requested quit of fiber 5 (parent: 2).
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136                       fiber.scheduler - Fiber 5 (parent: 2) terminated.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136    7            anynet.connection_mgr - Connection manager fiber quit.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136                       fiber.scheduler - Fiber 7 'connection_mgr' terminated.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136    9                anynet.any_socket - Listen fiber stopped.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136                       fiber.scheduler - Fiber 9 terminated.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136    8           anynet.main_relay_conn - Main relay connection closed.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136    8            anynet.connection_mgr - Forcing cleanup.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136                       fiber.scheduler - Fiber 8 'main_relay_conn' requested quit of fiber 23.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136   22                      fiber.fiber - Received quit.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136                       fiber.scheduler - Fiber 22 terminated.
+   info 2024-05-31 01:32:27.664       lsvc  79928  54136   23                      fiber.fiber - Received quit.
+   info 2024-05-31 01:32:27.665       lsvc  79928  54136                       fiber.scheduler - Fiber 23 terminated.
+   info 2024-05-31 01:32:27.665       lsvc  79928  54136                       fiber.scheduler - Fiber 2 requested quit of fiber 6 'license_adapter' (parent: 2).
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136                       fiber.scheduler - Fiber 8 'main_relay_conn' terminated.
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136    6                      fib_service - Caught exception. quitting.
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136                       fiber.scheduler - Fiber 6 'license_adapter' (parent: 2) terminated.
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136                       fiber.scheduler - Fiber 2 requested quit of fiber 4 'notifications' (parent: 2).
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136    4                      fib_service - Caught exception. quitting.
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136                       fiber.scheduler - Fiber 4 'notifications' (parent: 2) terminated.
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136                       fiber.scheduler - Fiber 2 requested quit of fiber 3 (parent: 2).
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136                       fiber.scheduler - Fiber 3 (parent: 2) terminated.
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136                       fiber.scheduler - Fiber 2 requested quit of fiber 12 'ancl' (parent: 2).
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136   12                      fib_service - Caught exception. quitting.
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136                       fiber.scheduler - Fiber 12 'ancl' (parent: 2) terminated.
+   info 2024-05-31 01:32:27.673       lsvc  79928  54136    2                      app.service - Service shutdown.
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136                       fiber.scheduler - Fiber 2 requested quit of fiber 10 'wol_service' (parent: 2).
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136   10                      fiber.fiber - Received quit.
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136                       fiber.scheduler - Fiber 10 'wol_service' (parent: 2) terminated.
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136                       fiber.scheduler - Fiber 2 requested quit of fiber 11 'invitation_service' (parent: 2).
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136   11                      fib_service - Caught exception. quitting.
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136                       fiber.scheduler - Fiber 11 'invitation_service' (parent: 2) terminated.
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136                       fiber.scheduler - Fiber 2 requested quit of fiber 13 'quiver_anynet_service' (parent: 2).
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136                       fiber.scheduler - Fiber 13 'quiver_anynet_service' (parent: 2) terminated.
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136                       fiber.scheduler - Fiber 2 requested quit of fiber 17 'ipc_connection' (parent: 2).
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136                       fiber.scheduler - Fiber 17 'ipc_connection' (parent: 2) requested quit of fiber 19 'account_adapter' (parent: 17 'ipc_connection').
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136   19                      fiber.fiber - Received quit.
+   info 2024-05-31 01:32:27.675       lsvc  79928  54136                       fiber.scheduler - Fiber 19 'account_adapter' (parent: 17 'ipc_connection') terminated.
+   info 2024-05-31 01:32:27.676       lsvc  79928  54136   17                      app.service - Fiber exit (ipc).
+   info 2024-05-31 01:32:27.676       lsvc  79928  54136                       fiber.scheduler - Fiber 17 'ipc_connection' (parent: 2) terminated.
+   info 2024-05-31 01:32:27.676       lsvc  79928  54136    2            anynet.connection_mgr - Connection manager shutdown.
+   info 2024-05-31 01:32:27.676       lsvc  79928  54136    2                  fiber.scheduler - Quitting scheduler (0).
+   info 2024-05-31 01:32:27.676       lsvc  79928  54136                       fiber.scheduler - Fiber 2 terminated.
+   info 2024-05-31 01:32:27.676       lsvc  79928  54136                       fiber.scheduler - All fibers terminated.
+   info 2024-05-31 01:32:27.676       lsvc  79928  54136                       fiber.scheduler - Scheduler stopped (0).
+  error 2024-05-31 01:32:27.676       lsvc  79928  54136                            init_ipc_t - No IPC service.
+   info 2024-05-31 01:32:27.676       lsvc  79928  54136                                  lsvc - Scheduler stopped. Terminating main loop.
+   info 2024-05-31 01:32:27.676       lsvc  79928  32580                                  lsvc - Main loop stopped (0).
+   info 2024-05-31 01:32:27.677       lsvc  79928  32580                                  main - Terminated (0).
+  error 2024-05-31 01:32:28.217      lctrl  72396  55964                        ad_app.control - Service connection lost.
+   info 2024-05-31 01:32:28.217      lctrl  72396  52476                    app.printer_worker - Quit signal.
+   info 2024-05-31 01:32:28.217      lctrl  72396  24588    1                   regcfg_watcher - Stop watching registry config.
+   info 2024-05-31 01:32:28.217      lctrl  72396  52476                    app.printer_worker - Terminating.
+   info 2024-05-31 01:32:28.217      lctrl  72396   3996                    app.tunnel_ft_comp - Stopping file component.
+   info 2024-05-31 01:32:28.217      lctrl  72396   3996                        ad_app.control - Disconnect service.
+   info 2024-05-31 01:32:28.219      lctrl  72396   3996                        ad_app.control - Control shutdown.
+   info 2024-05-31 01:32:28.219      lctrl  72396   3996                        ad_app.control - Disconnect service.
+warning 2024-05-31 01:32:28.219      lctrl  72396  58672                          wgf.msg_loop - Received duplicate quit message.
+warning 2024-05-31 01:32:28.226      lctrl  72396  58672                          wgf.msg_loop - 	1 times: Received duplicate quit message.
+   info 2024-05-31 01:32:28.226      lctrl  72396  58672                       fiber.scheduler - Quitting scheduler (0).
+   info 2024-05-31 01:32:28.226      lctrl  72396  24588                       fiber.scheduler - Quitting all fibers.
+   info 2024-05-31 01:32:28.226      lctrl  72396  24588                       fiber.scheduler - Fiber 1 'regcfg_watcher' terminated.
+   info 2024-05-31 01:32:28.226      lctrl  72396  24588                       fiber.scheduler - All fibers terminated.
+   info 2024-05-31 01:32:28.226      lctrl  72396  24588                       fiber.scheduler - Scheduler stopped (0).
+   info 2024-05-31 01:32:28.229      lctrl  72396  58672                  win_app.screen_frame - Deleted.
+   info 2024-05-31 01:32:28.229      lctrl  72396  58672                     win_app.wallpaper - Stopping wallpaper.
+   info 2024-05-31 01:32:28.229      lctrl  72396  58672                    app.tunnel_ft_comp - Terminated.
+   info 2024-05-31 01:32:28.229      lctrl  72396  58672              base.prot.job_dispatcher - 0 undelivered packets.
+  error 2024-05-31 01:32:28.231      lctrl  72396  58672                           ad_app.tray - Could not delete notify icon (2147500037).
+   info 2024-05-31 01:32:28.233      lctrl  72396  58672                                  main - Terminated (0).
